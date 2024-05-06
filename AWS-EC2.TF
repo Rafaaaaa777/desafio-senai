@@ -30,7 +30,7 @@ resource "aws_instance" "ec2_instance" {
 resource "aws_security_group" "instance_sg" {
   name        = "instance_sg-5"
   description = "Allow SSH and HTTP inbound traffic"
-  vpc_id      = "vpc-020c517631fc6428b"
+  vpc_id      = "<vpc-id>"
 
   ingress {
     from_port   = 22
