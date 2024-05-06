@@ -1,6 +1,6 @@
 FROM alpine as builder
 
-# Atualizando pacotes
+# Atualizando pacotesssssssss
 RUN apt update -y 
 
 # Instalar Terraform
