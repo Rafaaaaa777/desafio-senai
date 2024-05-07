@@ -7,7 +7,7 @@ provider "aws" {
 resource "aws_instance" "ec2_instance" {
   ami           = "ami-07caf09b362be10b8"
   instance_type = "t2.micro"
-  subnet_id     = "subnet-057c5b1a9f0229ad5" # ID da Subnet
+  subnet_id     = "subnet-0b06fec29f56829f2" # ID da Subnet
   vpc_security_group_ids = ["${aws_security_group.instance_sg.id}"]
 
   key_name = "vockey"
@@ -30,7 +30,7 @@ resource "aws_instance" "ec2_instance" {
 resource "aws_security_group" "instance_sg" {
   name        = "instance_sg"
   description = "Allow SSH and HTTP inbound traffic"
-  vpc_id      = "vpc-0df9f949fbae49d2d"
+  vpc_id      = "vpc-08d83e928be1a6e25"
 
   ingress {
     from_port   = 22
