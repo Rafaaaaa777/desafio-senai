@@ -9,7 +9,7 @@ RUN wget https://releases.hashicorp.com/terraform/1.8.2/terraform_1.8.2_linux_am
     mv terraform /usr/local/bin/ && \
     rm terraform_1.8.2_linux_amd64.zip
 
-# Configurando diretório de trabalho
+# Configurando diretório de trabalhos
 WORKDIR /work
 
 # STAGE 2: Final
